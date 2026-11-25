@@ -1,7 +1,0 @@
-Experiment,Train_Loss_Mean,Val_Loss_Mean,Train_Accuracy_Mean,Val_Accuracy_Mean,Test_Accuracy_Mean,Test_Accuracy_Std,Accuracy_Gap_Mean,Weight_Norm_Mean,Best_Epoch_Mean
-Baseline,0.0125,0.1026,1.0,0.9608,0.8992,0.0067,0.0392,11.1549,9.3333
-Dropout,0.0123,0.0946,1.0,0.9608,0.8953,0.0,0.0392,11.0731,12.3333
-Early_Stopping,0.0125,0.1026,1.0,0.9608,0.8992,0.0067,0.0392,11.1549,9.3333
-Full_Data_Baseline,0.026,0.0308,0.9925,0.9765,0.9535,0.0,0.016,11.5627,7.3333
-L1,0.0205,0.1155,0.9958,0.9529,0.9186,0.0201,0.0428,4.8906,38.6667
-L2,0.0227,0.108,0.9958,0.9608,0.8992,0.0067,0.035,7.9549,10.0

@@ -1,7 +1,0 @@
-{
-  "clean_accuracy_change_CNN_minus_FC": -0.02300000000000002,
-  "translation_drop_change_CNN_minus_FC": -0.1355,
-  "parameter_change_CNN_minus_FC": -81280,
-  "training_time_change_seconds": 7.958604417000004,
-  "objective_met_smaller_translation_drop": true
-}

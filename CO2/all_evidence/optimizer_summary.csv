@@ -1,5 +1,0 @@
-Optimizer,Best_Val_Loss_Mean,Best_Val_Loss_Std,Test_Accuracy_Mean,Test_Accuracy_Std,Test_Precision_Mean,Test_Recall_Mean,Test_RMSE_Mean,Test_MAE_Mean,Convergence_Epoch_Mean,Training_Time_Mean
-Adam,0.03125,0.01432,0.95349,0.0,0.96296,0.96296,0.181,0.0547,2.0,3.04072
-Momentum,0.08311,0.00396,0.92248,0.02421,0.90347,0.98148,0.20791,0.10023,40.0,2.70483
-RMSProp,0.03482,0.00247,0.95736,0.00671,0.96351,0.96914,0.17874,0.05483,1.0,2.72142
-SGD,0.64092,0.02344,0.71318,0.09399,0.69145,1.0,0.4706,0.46846,,2.91071
