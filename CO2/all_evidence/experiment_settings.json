@@ -1,0 +1,38 @@
+{
+    "Dataset": "Wisconsin Breast Cancer Diagnostic",
+    "Dataset_Samples": 569,
+    "Input_Features": 30,
+    "Training_Samples": 398,
+    "Validation_Samples": 85,
+    "Test_Samples": 86,
+    "Architecture": [
+        30,
+        128,
+        128,
+        64,
+        1
+    ],
+    "Activation": "ReLU",
+    "Loss": "BCEWithLogitsLoss",
+    "Batch_Size": 32,
+    "Maximum_Epochs": 60,
+    "Random_Seeds": [
+        42,
+        123,
+        2026
+    ],
+    "Main_Learning_Rate": 0.001,
+    "Optimizers": [
+        "SGD",
+        "Momentum",
+        "RMSProp",
+        "Adam"
+    ],
+    "Learning_Rates_Tested": [
+        0.0001,
+        0.001,
+        0.01
+    ],
+    "Convergence_Target_Validation_Loss": 0.15,
+    "Device": "cpu"
+}

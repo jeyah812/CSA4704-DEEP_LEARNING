@@ -1,0 +1,5 @@
+{
+  "objective": "Reduce the accuracy drop under a fixed 3-pixel right and 2-pixel down translation while retaining clean-test accuracy.",
+  "prediction": "The CNN is expected to have a smaller translated-test accuracy drop than the flattened fully connected network.",
+  "comparison": "Same data split, seed, optimizer, learning rate, batch size and epoch budget."
+}

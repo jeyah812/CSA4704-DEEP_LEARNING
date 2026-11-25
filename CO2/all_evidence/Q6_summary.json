@@ -1,0 +1,111 @@
+{
+  "device": "cpu",
+  "seed": 42,
+  "epochs": 2,
+  "batch_size": 128,
+  "memory_budget_MB": 5.0,
+  "latency_budget_ms": 2.0,
+  "results": [
+    {
+      "Architecture": "Compact_D2_W16_R32",
+      "Depth": 2,
+      "Width_max": 32,
+      "Resolution": 32,
+      "Parameters": 5418,
+      "MACs": 1622336,
+      "Model_Size_MB": 0.023827552795410156,
+      "Inference_ms_per_image": 0.4320472799986419,
+      "Training_Time_s": 3.8942821269999968,
+      "Validation_Loss": 2.23601993560791,
+      "Validation_Accuracy": 0.15333333333333332
+    },
+    {
+      "Architecture": "Balanced_D3_W24_R32",
+      "Depth": 3,
+      "Width_max": 64,
+      "Resolution": 32,
+      "Parameters": 39450,
+      "MACs": 5087872,
+      "Model_Size_MB": 0.15422534942626953,
+      "Inference_ms_per_image": 0.7699270900002375,
+      "Training_Time_s": 8.210931648000042,
+      "Validation_Loss": 2.1254293537139892,
+      "Validation_Accuracy": 0.17833333333333334
+    },
+    {
+      "Architecture": "Larger_D4_W32_R48",
+      "Depth": 4,
+      "Width_max": 128,
+      "Resolution": 48,
+      "Parameters": 186794,
+      "MACs": 24552704,
+      "Model_Size_MB": 0.716893196105957,
+      "Inference_ms_per_image": 2.31314526999995,
+      "Training_Time_s": 31.606138134000048,
+      "Validation_Loss": 2.031053902308146,
+      "Validation_Accuracy": 0.23833333333333334
+    }
+  ],
+  "verification": [
+    {
+      "Architecture": "Compact_D2_W16_R32",
+      "Manual_Params": 5418,
+      "Framework_Params": 5418,
+      "Manual_MACs": 1622336,
+      "Framework_MACs": 1622336,
+      "Output_Shape": "(1, 10)",
+      "Parameter_Check": true,
+      "MAC_Check": true
+    },
+    {
+      "Architecture": "Balanced_D3_W24_R32",
+      "Manual_Params": 39450,
+      "Framework_Params": 39450,
+      "Manual_MACs": 5087872,
+      "Framework_MACs": 5087872,
+      "Output_Shape": "(1, 10)",
+      "Parameter_Check": true,
+      "MAC_Check": true
+    },
+    {
+      "Architecture": "Larger_D4_W32_R48",
+      "Manual_Params": 186794,
+      "Framework_Params": 186794,
+      "Manual_MACs": 24552704,
+      "Framework_MACs": 24552704,
+      "Output_Shape": "(1, 10)",
+      "Parameter_Check": true,
+      "MAC_Check": true
+    }
+  ],
+  "growth": [
+    {
+      "Scenario": "Base",
+      "Parameters": 9248,
+      "MACs": 9437184,
+      "Parameter_Factor_vs_Base": 1.0,
+      "MAC_Factor_vs_Base": 1.0
+    },
+    {
+      "Scenario": "Double depth (2 similar layers)",
+      "Parameters": 18496,
+      "MACs": 18874368,
+      "Parameter_Factor_vs_Base": 2.0,
+      "MAC_Factor_vs_Base": 2.0
+    },
+    {
+      "Scenario": "Double width (Cin and Cout)",
+      "Parameters": 36928,
+      "MACs": 37748736,
+      "Parameter_Factor_vs_Base": 3.9930795847750864,
+      "MAC_Factor_vs_Base": 4.0
+    },
+    {
+      "Scenario": "Double resolution (H and W)",
+      "Parameters": 9248,
+      "MACs": 37748736,
+      "Parameter_Factor_vs_Base": 1.0,
+      "MAC_Factor_vs_Base": 4.0
+    }
+  ]
+}
